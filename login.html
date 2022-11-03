@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_styles/login_styles.css">
+    <link rel="icon" href="images/icon.png">
+    <title>LOGIN</title>
+</head>
+<body>
+
+    <div class="images">
+
+        <img class="movin" data-value="3" src="images/shu_1.png" alt="shoe picture">
+        <img class="movin" data-value="3" src="images/shu_2.png" alt="shoe picture">
+        <img class="movin" data-value="3" src="images/shu_3.png" alt="shoe picture">
+        <img class="movin" data-value="3" src="images/shu_4.png" alt="shoe picture">
+
+    </div>
+
+    <div class="logo">
+        <a href="index.html">kicks</a>
+    </div>
+
+    <main> 
+
+        <div class="hero-section">
+
+            <form id="login_form" action="">
+
+                <div class="navs">
+                    <h1>click login button</h1>
+                </div>
+
+                <div class="content">
+
+                    <label for="username">enter username.</label>
+                    <br>
+                    <input type="text" name="user" id="username">
+                    <br>
+        
+                    <label for="password">enter password.</label>
+                    <br>
+                    <input type="password" id="password" required>
+                    <br>
+
+                </div>
+
+                <a href="shop.html">
+                    <button class="cta" onclick="location.href = 'shop.html';">login</button>
+                </a>
+                
+                <br>
+
+                <a href="shop.html">forgot password?</a>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+        document.querySelectorAll(".movin").forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = (e.clientX * moving_value) / 150;
+        var y = (e.clientY * moving_value) / 150;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+
+        
+    });
+}
+    </script>
+
+</body>
+</html> 

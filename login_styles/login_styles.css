@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffc200;
+  overflow: hidden;
+}
+
+body .logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+body .logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-family: "Lemon-Regular";
+  font-size: 2.4rem;
+  font-weight: 800;
+  transition: all 0.2s ease-in-out;
+}
+body .logo a:hover {
+  text-shadow: 0rem 0.1rem 1rem black;
+  transition: all 0.2s ease-in-out;
+}
+body main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: "Book Antiqua";
+}
+body main .hero-section {
+  position: absolute;
+  top: 5rem;
+  background-color: #fff;
+  width: 40rem;
+  height: 50rem;
+  border-radius: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3568627451);
+  background: rgba(255, 251, 251, 0.2784313725);
+  background-blend-mode: normal;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+body main .hero-section form .navs {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+body main .hero-section form .navs h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.4rem;
+}
+body main .hero-section form .content {
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+}
+body main .hero-section form .content label {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+body main .hero-section form .content input {
+  font-size: 1.6rem;
+  outline: none;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  background: none;
+  border: thin solid #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%;
+  transition: all 0.2s ease-in-out;
+}
+body main .hero-section form .content input:focus {
+  outline: none;
+  background: none;
+}
+body main .hero-section form .cta {
+  padding: 0.8rem 3.4rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: thin solid #ffffff;
+  background: rgba(255, 255, 255, 0.2588235294);
+  background-blend-mode: normal;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+body main .hero-section form .cta:hover {
+  background: rgba(0, 0, 0, 0.5137254902);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+body main .hero-section form a {
+  margin-left: 2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4941176471);
+  transition: all 0.2s ease-in-out;
+}
+body main .hero-section form a:hover {
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+body .images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+body .images img:nth-child(1) {
+  width: 25rem;
+  position: absolute;
+  top: -2rem;
+  left: 28rem;
+  z-index: -2;
+}
+body .images img:nth-child(2) {
+  width: 22rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 33rem;
+  z-index: 2;
+}
+body .images img:nth-child(3) {
+  width: 19rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .images img:nth-child(4) {
+  width: 15rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 5rem;
+}/*# sourceMappingURL=login_styles.css.map */

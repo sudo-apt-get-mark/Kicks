@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styless.css" />
+    <link rel="icon" href="images/icon.png" />
+
+    <title>KICKS SHU STORE</title>
+  </head>
+
+  <body>
+    <!-- THIS IS THE NAV BAR -->
+
+    <nav>
+      <div class="logo">
+        <p>kicks</p>
+      </div>
+
+      <div class="link">
+        <a href="login.html">join/login</a>
+      </div>
+    </nav>
+
+    <!-- THIS IS THE MAIN SECTION-->
+
+    <main>
+      <div class="carousel">
+        <div class="img_txt">
+          <h1 class="sneaker">sneaker</h1>
+          <h1 class="head">head</h1>
+          <img
+            src="images/img.png"
+            class="movin"
+            data-value="3"
+            alt="shoe image" />
+        </div>
+      </div>
+
+      <div class="cta">
+        <a href="login.html">shop now</a>
+      </div>
+
+      <div class="quote">
+        <p>“I still have my feet on the ground - I just wear better shoes.”</p>
+      </div>
+
+      <div class="socials">
+        <a href="">
+          <img src="images/Instagram Icon.png" alt="" />
+        </a>
+        <a href="">
+          <img src="images/Facebook Icon.png" alt="" />
+        </a>
+        <a href="">
+          <img src="images/Telegram App Icon.png" alt="" />
+        </a>
+        <a href="">
+          <img src="images/Twitter Icon.png" alt="" />
+        </a>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      document.addEventListener("mousemove", parallax);
+      function parallax(e) {
+        document.querySelectorAll(".movin").forEach(function (move) {
+          var moving_value = move.getAttribute("data-value");
+          var x = (e.clientX * moving_value) / 150;
+          var y = (e.clientY * moving_value) / 150;
+
+          move.style.transform =
+            "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+      }
+    </script>
+  </body>
+</html>

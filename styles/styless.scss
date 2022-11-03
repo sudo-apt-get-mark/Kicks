@@ -1,0 +1,129 @@
+@import "resets";
+
+body {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 98%;
+        margin: auto;
+        padding: 1rem 0rem;
+
+        .logo {
+            p {
+                text-transform: uppercase;
+                color: map-get($color, primary_color);
+                font-family: "Lemon-Regular";
+                font-size: 2.4rem;
+                font-weight: map-get($font-weight, bold);
+            }
+        }
+
+        .link {
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                letter-spacing: 0.1rem;
+                color: map-get($color, link_color);
+                font-size: 1.6rem;
+                font-family: "Book Antiqua";
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    color: map-get($color, primary_color);
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    main {
+        .carousel {
+            margin-top: -2rem;
+
+            .img_txt {
+                position: relative;
+                width: 80%;
+                height: 100%;
+                margin: auto;
+
+                img {
+                    width: 53rem;
+                    position: relative;
+                    left: 25rem;
+                    top: 1rem;
+                    padding: 2rem;
+                    z-index: 2;
+                }
+
+                .sneaker {
+                    color: map-get($color, primary_color);
+                    text-transform: uppercase;
+                    font-size: 11rem;
+                    font-weight: map-get($font-weight, bold);
+                    font-family: Arial, Helvetica, sans-serif;
+                    position: absolute;
+                }
+
+                .head {
+                    @extend .sneaker;
+
+                    bottom: 1rem;
+                    right: 1rem;
+                }
+            }
+        }
+
+        .cta {
+            width: 100%;
+            text-align: center;
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: map-get($color, link_color);
+                font-size: 5rem;
+                font-weight: map-get($font-weight, regular);
+                font-family: "Book Antiqua";
+                -webkit-text-stroke: solid 1px #fae800;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    letter-spacing: .5rem;
+                    color: map-get($color, primary_color );
+                    text-shadow: 0 0 1rem #fae800,
+                                0 0 2rem #fae800,
+                                0 0 3rem #fae800;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+
+        .quote {
+            position: absolute;
+            width: 26%;
+            text-align: center;
+            padding: 0.5rem;
+            right: 0;
+
+            p {
+                color: map-get($color, link_color);
+                font-size: 1.6rem;
+                font-weight: map-get($font-weight, regular);
+                font-family: "Book Antiqua";
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            left: 2rem;
+            bottom: 1rem;
+            gap: 1.3rem;
+        }
+    }
+}

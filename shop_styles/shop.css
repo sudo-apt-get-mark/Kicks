@@ -1,0 +1,533 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: fixed;
+  background: linear-gradient(75deg, #ff00bb, #ff0059, rgba(255, 0, 21, 0.8117647059), rgba(255, 0, 0, 0.7803921569), #ff0000, #ff2a00, #ff5e00, #ff6f00, #ff8800);
+  background-size: 300% 300%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  animation: color 10s ease-in-out infinite reverse;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+body .main__section {
+  background-color: #000;
+  width: 98%;
+  height: 100%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  border: 0.14rem solid rgba(209, 209, 209, 0.768627451);
+  background: rgba(255, 255, 255, 0.5058823529);
+  background-blend-mode: normal;
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
+}
+body .main__section .shop__section {
+  width: 98%;
+  margin: auto;
+}
+body .main__section .shop__section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+body .main__section .shop__section nav .logo a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  font-weight: 800;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+body .main__section .shop__section nav .logo a:hover {
+  letter-spacing: 0.2rem;
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+body .main__section .shop__section nav .cart img {
+  width: 3.5rem;
+}
+body .main__section .display__shoes {
+  margin-top: 2rem;
+}
+body .main__section .display__shoes .shu_section1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 {
+  width: 60%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  row-gap: 2rem;
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 .shu_1 {
+  width: 21rem;
+  height: 22rem;
+  border-radius: 10px;
+  border: 0.2rem solid rgba(46, 46, 46, 0.4117647059);
+  background: rgba(255, 255, 255, 0.1764705882);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 .shu_1:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4470588235);
+  transform: translateY(-0.4rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 .shu_1 .shop_cart {
+  float: right;
+  margin: 0.7rem;
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 .shu_1 .shop_cart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 .shu_1 img {
+  width: 18rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 1.2rem;
+  pointer-events: none;
+}
+body .main__section .display__shoes .shu_section1 .shoe_cont1 .shu_1 p {
+  font-family: Arial;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.2rem;
+}
+body .main__section .display__shoes .shu_section1 .promo_1 {
+  width: 42rem;
+  height: 46rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(69deg, #f66e0e 0%, #ee873e 100%);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+body .main__section .display__shoes .shu_section1 .promo_1:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4470588235);
+  transform: translateY(-0.4rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section1 .promo_1 h1 {
+  color: rgba(255, 255, 255, 0.3019607843);
+  font-family: Arial;
+  font-size: 16rem;
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: -1;
+}
+body .main__section .display__shoes .shu_section1 .promo_1 img {
+  width: 37rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  top: -5rem;
+  left: 3rem;
+  pointer-events: none;
+}
+body .main__section .display__shoes .shu_section1 .promo_1 button {
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0);
+  padding: 1rem 3rem;
+  position: absolute;
+  bottom: 4rem;
+  left: 12rem;
+  width: 50%;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+body .main__section .display__shoes .shu_section1 .promo_1 button:hover {
+  background: rgba(0, 0, 0, 0.324);
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+body .main__section .display__shoes .shu_section2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+body .main__section .display__shoes .shu_section2 .promo_2 {
+  width: 42rem;
+  height: 46rem;
+  border-radius: 1rem;
+  background: rgba(229, 176, 30, 0.831372549);
+  position: relative;
+  margin-top: 1.5rem;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section2 .promo_2:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4470588235);
+  transform: translateY(-0.4rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section2 .promo_2 h1 {
+  color: rgba(0, 0, 0, 0.6509803922);
+  font-family: Arial;
+  font-size: 14rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: -1;
+}
+body .main__section .display__shoes .shu_section2 .promo_2 img {
+  position: absolute;
+  top: 4rem;
+  width: 37rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .main__section .display__shoes .shu_section2 .promo_2 button {
+  border-radius: 4px;
+  border: 1px solid #000000;
+  background: rgba(255, 255, 255, 0);
+  padding: 1rem 3rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 9rem;
+  width: 50%;
+  color: #000000;
+  font-family: Arial;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+body .main__section .display__shoes .shu_section2 .promo_2 button:hover {
+  background: rgba(255, 255, 255, 0.324);
+  transition: all 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 {
+  width: 60%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  row-gap: 2rem;
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 .shu_1 {
+  width: 21rem;
+  height: 22rem;
+  border-radius: 10px;
+  border: 0.2rem solid rgba(46, 46, 46, 0.4117647059);
+  background: rgba(255, 255, 255, 0.1764705882);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 .shu_1:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4470588235);
+  transform: translateY(-0.4rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 .shu_1 .shop_cart {
+  float: right;
+  margin: 0.7rem;
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 .shu_1 .shop_cart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 .shu_1 img {
+  width: 18rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 1.2rem;
+  pointer-events: none;
+}
+body .main__section .display__shoes .shu_section2 .shu_cont2 .shu_1 p {
+  font-family: Arial;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.2rem;
+}
+body .main__section .display__shoes .limited_edition {
+  width: 100%;
+  height: 90vh;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  background: rgba(228, 223, 208, 0.1529411765);
+  -webkit-backdrop-filter: blur(0.7rem);
+          backdrop-filter: blur(0.7rem);
+  position: relative;
+}
+body .main__section .display__shoes .limited_edition .top {
+  position: absolute;
+  top: -10rem;
+  left: -6rem;
+}
+body .main__section .display__shoes .limited_edition .top img {
+  width: 30rem;
+}
+body .main__section .display__shoes .limited_edition .bottom {
+  position: absolute;
+  bottom: -4rem;
+  right: -8rem;
+}
+body .main__section .display__shoes .limited_edition .bottom img {
+  width: 30rem;
+}
+body .main__section .display__shoes .limited_edition .content_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 10rem;
+}
+body .main__section .display__shoes .limited_edition .content_section h1 {
+  font-family: Poppins;
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+body .main__section .display__shoes .limited_edition .content_section h2 {
+  color: #f8c822;
+  font-family: Poppins;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: #000000;
+  padding: 0.3rem 8rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+body .main__section .display__shoes .limited_edition .content_section button {
+  margin-top: 5rem;
+  padding: 0.2rem 6rem;
+  text-transform: capitalize;
+  background: none;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 600;
+  border: thin solid #000;
+  border-radius: 0.5rem;
+  transition: all 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+body .main__section .display__shoes .limited_edition .content_section button:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.6784313725);
+  transition: all 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+body .main__section .display__shoes .limited_edition .discount {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15rem;
+  height: 15rem;
+  background: #121212;
+  border-bottom-left-radius: inherit;
+  border-top-right-radius: inherit;
+  text-align: center;
+}
+body .main__section .display__shoes .limited_edition .discount h1 {
+  color: #90c418;
+  font-family: Poppins;
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+body .main__section .display__shoes .shu_section3 {
+  width: 100%;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-around;
+  row-gap: 2rem;
+}
+body .main__section .display__shoes .shu_section3 .shu_1 {
+  width: 21rem;
+  height: 22rem;
+  border-radius: 10px;
+  border: 0.2rem solid rgba(46, 46, 46, 0.4117647059);
+  background: rgba(255, 255, 255, 0.1764705882);
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section3 .shu_1:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.4470588235);
+  transform: translateY(-0.4rem);
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .main__section .display__shoes .shu_section3 .shu_1 .shop_cart {
+  float: right;
+  margin: 0.7rem;
+}
+body .main__section .display__shoes .shu_section3 .shu_1 .shop_cart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+body .main__section .display__shoes .shu_section3 .shu_1 img {
+  width: 18rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 1.2rem;
+  pointer-events: none;
+}
+body .main__section .display__shoes .shu_section3 .shu_1 p {
+  font-family: Arial;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.2rem;
+}
+body .main__section .display__shoes footer {
+  width: 100%;
+  height: 46rem;
+  margin: auto;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  border-top-left-radius: 12rem;
+  border-top-right-radius: 12rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border: 1px solid #808080;
+  background: rgba(159, 69, 69, 0.6509803922);
+  background-blend-mode: normal;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  position: relative;
+}
+body .main__section .display__shoes footer .futshu {
+  position: absolute;
+  top: -8rem;
+  left: -6rem;
+}
+body .main__section .display__shoes footer .futshu img {
+  width: 35rem;
+}
+body .main__section .display__shoes footer .legshu {
+  position: absolute;
+  bottom: -4rem;
+  right: 0;
+}
+body .main__section .display__shoes footer .legshu img {
+  width: 27rem;
+}
+body .main__section .display__shoes footer .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 8rem;
+}
+body .main__section .display__shoes footer .content h1 {
+  margin-bottom: 2rem;
+  font-family: Poppins;
+  font-size: 4.4rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+body .main__section .display__shoes footer .content .input {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+body .main__section .display__shoes footer .content .input input {
+  border-radius: 1.5rem;
+  border: thin solid #808080;
+  background: rgba(255, 255, 255, 0.3882352941);
+  width: 60rem;
+  height: 4rem;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+body .main__section .display__shoes footer .content .input button {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: thin solid #808080;
+  background: rgba(0, 0, 0, 0.3882352941);
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+body .main__section .display__shoes footer .content .social_links {
+  margin-top: 5rem;
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+body .main__section .display__shoes footer .content .social_links img {
+  width: 4rem;
+}
+body .main__section .display__shoes footer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6352941176);
+  font-family: Poppins;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  transition: all 0.2s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+body .main__section .display__shoes footer a:hover {
+  color: #000;
+  transition: all 0.2s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}/*# sourceMappingURL=shop.css.map */

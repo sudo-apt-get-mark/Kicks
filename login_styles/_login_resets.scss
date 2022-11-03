@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffc200;
+    overflow: hidden;
+}
+
+$font-weight: (
+    "regular": 400,
+    "medium": 600,
+    "bold": 800,
+);

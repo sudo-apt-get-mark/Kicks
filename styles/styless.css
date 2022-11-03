@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(ellipse, #1e1e1c 0%, #121212 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/*
+    THIS ARE THE VARIALES
+*/
+body nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  margin: auto;
+  padding: 1rem 0rem;
+}
+body nav .logo p {
+  text-transform: uppercase;
+  color: #fae800;
+  font-family: "Lemon-Regular";
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+body nav .link a {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: rgba(233, 218, 1, 0.6745098039);
+  font-size: 1.6rem;
+  font-family: "Book Antiqua";
+  transition: all 0.2s ease-in-out;
+}
+body nav .link a:hover {
+  color: #fae800;
+  transition: all 0.2s ease-in-out;
+}
+body main .carousel {
+  margin-top: -2rem;
+}
+body main .carousel .img_txt {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+body main .carousel .img_txt img {
+  width: 53rem;
+  position: relative;
+  left: 25rem;
+  top: 1rem;
+  padding: 2rem;
+  z-index: 2;
+}
+body main .carousel .img_txt .sneaker, body main .carousel .img_txt .head {
+  color: #fae800;
+  text-transform: uppercase;
+  font-size: 11rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+}
+body main .carousel .img_txt .head {
+  bottom: 1rem;
+  right: 1rem;
+}
+body main .cta {
+  width: 100%;
+  text-align: center;
+}
+body main .cta a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(233, 218, 1, 0.6745098039);
+  font-size: 5rem;
+  font-weight: 400;
+  font-family: "Book Antiqua";
+  -webkit-text-stroke: solid 1px #fae800;
+  transition: all 0.2s ease-in-out;
+}
+body main .cta a:hover {
+  letter-spacing: 0.5rem;
+  color: #fae800;
+  text-shadow: 0 0 1rem #fae800, 0 0 2rem #fae800, 0 0 3rem #fae800;
+  transition: all 0.2s ease-in-out;
+}
+body main .quote {
+  position: absolute;
+  width: 26%;
+  text-align: center;
+  padding: 0.5rem;
+  right: 0;
+}
+body main .quote p {
+  color: rgba(233, 218, 1, 0.6745098039);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Book Antiqua";
+}
+body main .socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+  gap: 1.3rem;
+}/*# sourceMappingURL=styless.css.map */
